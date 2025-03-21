@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 # Accessing variables
-api_key = f"{os.getenv("API_KEY")}"
+api_key = str(os.getenv("API_KEY"))
 
 from google import genai
 import os
